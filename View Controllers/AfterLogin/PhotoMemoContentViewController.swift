@@ -2,9 +2,7 @@
 //  ContentViewController.swift
 //  MemoWithCollectionView
 //
-//  Created by 한병두 on 2018. 6. 16..
-//  Copyright © 2018년 Byungdoo Han. All rights reserved.
-//
+
 
 import UIKit
 
@@ -20,18 +18,11 @@ class PhotoMemoContentViewController: UIViewController {
 
     var photomemo : Photomemo!
     var viewcontroller = PhotoViewController()
-
-//    var titleBox = ""
-//    var contentBox = ""
-//    var imageBox : UIImage!
     
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-//        memoTitleLabel.text = titleBox
-//        memoContentsTextView.text = contentBox
-//        memoImageView.image = imageBox
         
         memoNameLabel.text = photomemo.name
         memoBreedLabel.text = photomemo.breed
@@ -44,18 +35,14 @@ class PhotoMemoContentViewController: UIViewController {
         
         self.title = memoNameLabel.text
         
-  
-        // Do any additional setup after loading the view.
     }
 
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
     }
     
     // MARK: - Navigation
 
-    // In a storyboard-based application, you will often want to do a little preparation before navigation
     override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         if segue.identifier == "Edit" {
         let editViewController: PhotomMemoEditViewController = segue.destination as! PhotomMemoEditViewController

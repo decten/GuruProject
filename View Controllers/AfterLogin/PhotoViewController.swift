@@ -2,9 +2,7 @@
 //  ViewController.swift
 //  MemoWithCollectionView
 //
-//  Created by 한병두 on 2018. 6. 1..
-//  Copyright © 2018년 Byungdoo Han. All rights reserved.
-//
+
 
 import UIKit
 import CoreData
@@ -17,9 +15,6 @@ class PhotoViewController: UIViewController, UICollectionViewDelegate, UICollect
     var controller : NSFetchedResultsController<Photomemo>!
     var managedObjectContext: NSManagedObjectContext!
 
-    
-//    var selectedIndex : IndexPath?
-    
   
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -114,27 +109,12 @@ class PhotoViewController: UIViewController, UICollectionViewDelegate, UICollect
     
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
-        //선택한 Cell과 index가 하나씩 어긋난 코드 -> 왜 그런지는 파악해야 함.
-//        if segue.identifier == "ContentViewController" {
-//            let contentViewController: ContentViewController = segue.destination as! ContentViewController
-//            let photomemo = controller.object(at: selectedIndexPath!)
-//
-//            print(photomemo)
-//
-//            contentViewController.photomemo = photomemo
-//            contentViewController.titleBox = photomemo.title!
-//            contentViewController.contentBox = photomemo.contents!
-        
         if segue.identifier == "ContentViewController" {
-        let contentViewController: ContentViewController = segue.destination as! ContentViewController
+        let contentViewController: PhotoMemoContentViewController = segue.destination as! PhotoMemoContentViewController
         if let cell = sender as? PhotoCollectionViewCell, let indexPath = self.collectionView.indexPath(for: cell){
             
             let photomemo = controller.object(at: indexPath)
 
-//            contentViewController.titleBox = photomemo.title!
-//            contentViewController.contentBox = photomemo.contents!
-//            let changeData = UIImage(data: photomemo.photo! as Data)
-//            contentViewController.imageBox = changeData!
 
             contentViewController.photomemo = photomemo
             }

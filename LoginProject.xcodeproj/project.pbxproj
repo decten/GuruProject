@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		91F752F024E839A700EC507B /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F752EF24E839A700EC507B /* KakaoOpenSDK.framework */; };
 		9DF9E295ED7EAF859B2556D3 /* Pods_LoginProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF96BE647A3E3E88513463C /* Pods_LoginProject.framework */; };
+		FD05013124F2EE1400A1775A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05013024F2EE1400A1775A /* HomeViewController.swift */; };
 		FD51EFD624E42DFC00EBB739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51EFD524E42DFC00EBB739 /* AppDelegate.swift */; };
 		FD51EFD824E42DFC00EBB739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51EFD724E42DFC00EBB739 /* SceneDelegate.swift */; };
 		FD51EFDF24E42E0200EBB739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD51EFDE24E42E0200EBB739 /* Assets.xcassets */; };
@@ -25,7 +26,6 @@
 		FDE73AF324F2BBE900225959 /* PhotoMemoAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEB24F2BBE900225959 /* PhotoMemoAddViewController.swift */; };
 		FDE73AF424F2BBE900225959 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEC24F2BBE900225959 /* WriteViewController.swift */; };
 		FDE73AF624F2BBE900225959 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEE24F2BBE900225959 /* DetailViewController.swift */; };
-		FDE73AF724F2BBE900225959 /* BountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEF24F2BBE900225959 /* BountyViewController.swift */; };
 		FDE73AF824F2BBE900225959 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AF024F2BBE900225959 /* LikeViewController.swift */; };
 		FDE73B0224F2BBF500225959 /* PhotoMemoContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFA24F2BBF500225959 /* PhotoMemoContentViewController.swift */; };
 		FDE73B0324F2BBF500225959 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFB24F2BBF500225959 /* PhotoViewController.swift */; };
@@ -40,6 +40,7 @@
 		6CF96BE647A3E3E88513463C /* Pods_LoginProject.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_LoginProject.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		81A5F735EADB8F06DAAFED50 /* Pods-LoginProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginProject.debug.xcconfig"; path = "Target Support Files/Pods-LoginProject/Pods-LoginProject.debug.xcconfig"; sourceTree = "<group>"; };
 		91F752EF24E839A700EC507B /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
+		FD05013024F2EE1400A1775A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
 		FD51EFD224E42DFC00EBB739 /* 맡아줄개.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "맡아줄개.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD51EFD524E42DFC00EBB739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD51EFD724E42DFC00EBB739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -61,7 +62,6 @@
 		FDE73AEB24F2BBE900225959 /* PhotoMemoAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMemoAddViewController.swift; sourceTree = "<group>"; };
 		FDE73AEC24F2BBE900225959 /* WriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		FDE73AEE24F2BBE900225959 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
-		FDE73AEF24F2BBE900225959 /* BountyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BountyViewController.swift; sourceTree = "<group>"; };
 		FDE73AF024F2BBE900225959 /* LikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		FDE73AFA24F2BBF500225959 /* PhotoMemoContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMemoContentViewController.swift; sourceTree = "<group>"; };
 		FDE73AFB24F2BBF500225959 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
@@ -213,7 +213,7 @@
 			isa = PBXGroup;
 			children = (
 				FDE73AEE24F2BBE900225959 /* DetailViewController.swift */,
-				FDE73AEF24F2BBE900225959 /* BountyViewController.swift */,
+				FD05013024F2EE1400A1775A /* HomeViewController.swift */,
 				FDE73AF024F2BBE900225959 /* LikeViewController.swift */,
 			);
 			path = NoLogin;
@@ -367,8 +367,8 @@
 				FDE73B0524F2BBF500225959 /* PhotoCollectionViewCell.swift in Sources */,
 				FDE73AE224F27F4800225959 /* ChatMessageViewCell.swift in Sources */,
 				FDE73B0324F2BBF500225959 /* PhotoViewController.swift in Sources */,
-				FDE73AF724F2BBE900225959 /* BountyViewController.swift in Sources */,
 				FDE73ADF24F27DEB00225959 /* LoginMyPageViewController.swift in Sources */,
+				FD05013124F2EE1400A1775A /* HomeViewController.swift in Sources */,
 				FDE73ADC24F27DDD00225959 /* MyPageViewController.swift in Sources */,
 				FDE73AD924F27DDD00225959 /* TermsConditionViewController.swift in Sources */,
 				FDE73B0924F2BBF500225959 /* PhotoMemoCoreData.swift in Sources */,
