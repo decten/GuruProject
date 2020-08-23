@@ -71,7 +71,7 @@ class EditViewController: UIViewController, UIImagePickerControllerDelegate, UIN
 
     }
     
-    private func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
+    func imagePickerController(_ picker: UIImagePickerController, didFinishPickingMediaWithInfo info: [String : Any]) {
         if let image = info[UIImagePickerController.InfoKey.originalImage.rawValue] as? UIImage {
             edit_imageView.image = image
             self.tempImage = image
