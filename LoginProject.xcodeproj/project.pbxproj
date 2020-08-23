@@ -11,7 +11,6 @@
 		9DF9E295ED7EAF859B2556D3 /* Pods_LoginProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF96BE647A3E3E88513463C /* Pods_LoginProject.framework */; };
 		FD51EFD624E42DFC00EBB739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51EFD524E42DFC00EBB739 /* AppDelegate.swift */; };
 		FD51EFD824E42DFC00EBB739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51EFD724E42DFC00EBB739 /* SceneDelegate.swift */; };
-		FD51EFDD24E42DFC00EBB739 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD51EFDB24E42DFC00EBB739 /* Main.storyboard */; };
 		FD51EFDF24E42E0200EBB739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD51EFDE24E42E0200EBB739 /* Assets.xcassets */; };
 		FD51EFE224E42E0200EBB739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD51EFE024E42E0200EBB739 /* LaunchScreen.storyboard */; };
 		FD51F00224E45A8400EBB739 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD51F00124E45A8400EBB739 /* GoogleService-Info.plist */; };
@@ -46,7 +45,6 @@
 		FD51EFD224E42DFC00EBB739 /* 맡아줄개.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "맡아줄개.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD51EFD524E42DFC00EBB739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD51EFD724E42DFC00EBB739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
-		FD51EFDC24E42DFC00EBB739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		FD51EFDE24E42E0200EBB739 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		FD51EFE124E42E0200EBB739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD51EFE324E42E0200EBB739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -195,7 +193,7 @@
 		FDE73AE024F27E9500225959 /* Storyboards */ = {
 			isa = PBXGroup;
 			children = (
-				FD51EFDB24E42DFC00EBB739 /* Main.storyboard */,
+				FDE73B0C24F2BEDF00225959 /* Main.storyboard */,
 				FD51EFE024E42E0200EBB739 /* LaunchScreen.storyboard */,
 			);
 			path = Storyboards;
@@ -212,7 +210,6 @@
 		FDE73AE824F2BBE900225959 /* BountyList */ = {
 			isa = PBXGroup;
 			children = (
-				FDE73B0C24F2BEDF00225959 /* Main.storyboard */,
 				FDE73AEB24F2BBE900225959 /* AddViewController.swift */,
 				FDE73AEC24F2BBE900225959 /* writeViewController.swift */,
 				FDE73AED24F2BBE900225959 /* favoriteViewController.swift */,
@@ -301,7 +298,6 @@
 				FD51F00224E45A8400EBB739 /* GoogleService-Info.plist in Resources */,
 				FDE73B0D24F2BEE000225959 /* Main.storyboard in Resources */,
 				FD51EFDF24E42E0200EBB739 /* Assets.xcassets in Resources */,
-				FD51EFDD24E42DFC00EBB739 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -399,14 +395,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		FD51EFDB24E42DFC00EBB739 /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				FD51EFDC24E42DFC00EBB739 /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
 		FD51EFE024E42E0200EBB739 /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
