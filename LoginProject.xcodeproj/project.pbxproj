@@ -20,20 +20,18 @@
 		FDE73ADC24F27DDD00225959 /* MyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AD724F27DDC00225959 /* MyPageViewController.swift */; };
 		FDE73ADD24F27DDD00225959 /* SignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AD824F27DDC00225959 /* SignUpViewController.swift */; };
 		FDE73ADF24F27DEB00225959 /* LoginMyPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73ADE24F27DEB00225959 /* LoginMyPageViewController.swift */; };
-		FDE73AE224F27F4800225959 /* ChatMessageCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AE124F27F4800225959 /* ChatMessageCell.swift */; };
+		FDE73AE224F27F4800225959 /* ChatMessageViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AE124F27F4800225959 /* ChatMessageViewCell.swift */; };
 		FDE73AE524F2800A00225959 /* ChatUserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AE424F2800A00225959 /* ChatUserModel.swift */; };
-		FDE73AF324F2BBE900225959 /* AddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEB24F2BBE900225959 /* AddViewController.swift */; };
-		FDE73AF424F2BBE900225959 /* writeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEC24F2BBE900225959 /* writeViewController.swift */; };
-		FDE73AF524F2BBE900225959 /* favoriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AED24F2BBE900225959 /* favoriteViewController.swift */; };
+		FDE73AF324F2BBE900225959 /* PhotoMemoAddViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEB24F2BBE900225959 /* PhotoMemoAddViewController.swift */; };
+		FDE73AF424F2BBE900225959 /* WriteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEC24F2BBE900225959 /* WriteViewController.swift */; };
 		FDE73AF624F2BBE900225959 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEE24F2BBE900225959 /* DetailViewController.swift */; };
 		FDE73AF724F2BBE900225959 /* BountyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEF24F2BBE900225959 /* BountyViewController.swift */; };
-		FDE73AF824F2BBE900225959 /* likeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AF024F2BBE900225959 /* likeViewController.swift */; };
-		FDE73B0224F2BBF500225959 /* ContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFA24F2BBF500225959 /* ContentViewController.swift */; };
-		FDE73B0324F2BBF500225959 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFB24F2BBF500225959 /* ViewController.swift */; };
-		FDE73B0524F2BBF500225959 /* CollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFD24F2BBF500225959 /* CollectionViewCell.swift */; };
-		FDE73B0624F2BBF500225959 /* EditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFE24F2BBF500225959 /* EditViewController.swift */; };
-		FDE73B0824F2BBF500225959 /* Photomemo+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73B0024F2BBF500225959 /* Photomemo+CoreDataProperties.swift */; };
-		FDE73B0924F2BBF500225959 /* Photomemo+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73B0124F2BBF500225959 /* Photomemo+CoreDataClass.swift */; };
+		FDE73AF824F2BBE900225959 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AF024F2BBE900225959 /* LikeViewController.swift */; };
+		FDE73B0224F2BBF500225959 /* PhotoMemoContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFA24F2BBF500225959 /* PhotoMemoContentViewController.swift */; };
+		FDE73B0324F2BBF500225959 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFB24F2BBF500225959 /* PhotoViewController.swift */; };
+		FDE73B0524F2BBF500225959 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFD24F2BBF500225959 /* PhotoCollectionViewCell.swift */; };
+		FDE73B0624F2BBF500225959 /* PhotomMemoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFE24F2BBF500225959 /* PhotomMemoEditViewController.swift */; };
+		FDE73B0924F2BBF500225959 /* PhotoMemoCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73B0124F2BBF500225959 /* PhotoMemoCoreData.swift */; };
 		FDE73B0D24F2BEE000225959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE73B0C24F2BEDF00225959 /* Main.storyboard */; };
 /* End PBXBuildFile section */
 
@@ -58,20 +56,18 @@
 		FDE73AD724F27DDC00225959 /* MyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = MyPageViewController.swift; sourceTree = "<group>"; };
 		FDE73AD824F27DDC00225959 /* SignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SignUpViewController.swift; sourceTree = "<group>"; };
 		FDE73ADE24F27DEB00225959 /* LoginMyPageViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginMyPageViewController.swift; sourceTree = "<group>"; };
-		FDE73AE124F27F4800225959 /* ChatMessageCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageCell.swift; sourceTree = "<group>"; };
+		FDE73AE124F27F4800225959 /* ChatMessageViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatMessageViewCell.swift; sourceTree = "<group>"; };
 		FDE73AE424F2800A00225959 /* ChatUserModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatUserModel.swift; sourceTree = "<group>"; };
-		FDE73AEB24F2BBE900225959 /* AddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AddViewController.swift; sourceTree = "<group>"; };
-		FDE73AEC24F2BBE900225959 /* writeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = writeViewController.swift; sourceTree = "<group>"; };
-		FDE73AED24F2BBE900225959 /* favoriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = favoriteViewController.swift; sourceTree = "<group>"; };
+		FDE73AEB24F2BBE900225959 /* PhotoMemoAddViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMemoAddViewController.swift; sourceTree = "<group>"; };
+		FDE73AEC24F2BBE900225959 /* WriteViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = WriteViewController.swift; sourceTree = "<group>"; };
 		FDE73AEE24F2BBE900225959 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FDE73AEF24F2BBE900225959 /* BountyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = BountyViewController.swift; sourceTree = "<group>"; };
-		FDE73AF024F2BBE900225959 /* likeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = likeViewController.swift; sourceTree = "<group>"; };
-		FDE73AFA24F2BBF500225959 /* ContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ContentViewController.swift; sourceTree = "<group>"; };
-		FDE73AFB24F2BBF500225959 /* ViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		FDE73AFD24F2BBF500225959 /* CollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CollectionViewCell.swift; sourceTree = "<group>"; };
-		FDE73AFE24F2BBF500225959 /* EditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = EditViewController.swift; sourceTree = "<group>"; };
-		FDE73B0024F2BBF500225959 /* Photomemo+CoreDataProperties.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photomemo+CoreDataProperties.swift"; sourceTree = "<group>"; };
-		FDE73B0124F2BBF500225959 /* Photomemo+CoreDataClass.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Photomemo+CoreDataClass.swift"; sourceTree = "<group>"; };
+		FDE73AF024F2BBE900225959 /* LikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
+		FDE73AFA24F2BBF500225959 /* PhotoMemoContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMemoContentViewController.swift; sourceTree = "<group>"; };
+		FDE73AFB24F2BBF500225959 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
+		FDE73AFD24F2BBF500225959 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		FDE73AFE24F2BBF500225959 /* PhotomMemoEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotomMemoEditViewController.swift; sourceTree = "<group>"; };
+		FDE73B0124F2BBF500225959 /* PhotoMemoCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMemoCoreData.swift; sourceTree = "<group>"; };
 		FDE73B0C24F2BEDF00225959 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -109,8 +105,6 @@
 		FD51EFC924E42DFC00EBB739 = {
 			isa = PBXGroup;
 			children = (
-				FDE73AE824F2BBE900225959 /* BountyList */,
-				FDE73AF924F2BBF500225959 /* MemoWithCollectionView */,
 				FDE73AE324F27FB600225959 /* Models */,
 				FD51EFD424E42DFC00EBB739 /* Resources */,
 				FD51EFEC24E4437D00EBB739 /* Views */,
@@ -145,7 +139,8 @@
 			children = (
 				FDE73AE024F27E9500225959 /* Storyboards */,
 				FD51EFDE24E42E0200EBB739 /* Assets.xcassets */,
-				FDE73AE124F27F4800225959 /* ChatMessageCell.swift */,
+				FDE73AFD24F2BBF500225959 /* PhotoCollectionViewCell.swift */,
+				FDE73AE124F27F4800225959 /* ChatMessageViewCell.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -153,7 +148,7 @@
 		FD51EFED24E4439500EBB739 /* View Controllers */ = {
 			isa = PBXGroup;
 			children = (
-				FDE73AD024F27B2F00225959 /* Chat */,
+				FDE73B0E24F2E29C00225959 /* NoLogin */,
 				FDE73ACE24F27B1C00225959 /* BeforeLogin */,
 				FDE73ACD24F27B0300225959 /* AfterLogin */,
 			);
@@ -163,7 +158,13 @@
 		FDE73ACD24F27B0300225959 /* AfterLogin */ = {
 			isa = PBXGroup;
 			children = (
+				FDE73AEB24F2BBE900225959 /* PhotoMemoAddViewController.swift */,
+				FDE73AFA24F2BBF500225959 /* PhotoMemoContentViewController.swift */,
+				FDE73AFE24F2BBF500225959 /* PhotomMemoEditViewController.swift */,
+				FDE73AFB24F2BBF500225959 /* PhotoViewController.swift */,
+				FDE73AEC24F2BBE900225959 /* WriteViewController.swift */,
 				FDE73ADE24F27DEB00225959 /* LoginMyPageViewController.swift */,
+				FDE73AD024F27B2F00225959 /* Chat */,
 			);
 			path = AfterLogin;
 			sourceTree = "<group>";
@@ -202,35 +203,20 @@
 		FDE73AE324F27FB600225959 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				FDE73B0124F2BBF500225959 /* PhotoMemoCoreData.swift */,
 				FDE73AE424F2800A00225959 /* ChatUserModel.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
 		};
-		FDE73AE824F2BBE900225959 /* BountyList */ = {
+		FDE73B0E24F2E29C00225959 /* NoLogin */ = {
 			isa = PBXGroup;
 			children = (
-				FDE73AEB24F2BBE900225959 /* AddViewController.swift */,
-				FDE73AEC24F2BBE900225959 /* writeViewController.swift */,
-				FDE73AED24F2BBE900225959 /* favoriteViewController.swift */,
 				FDE73AEE24F2BBE900225959 /* DetailViewController.swift */,
 				FDE73AEF24F2BBE900225959 /* BountyViewController.swift */,
-				FDE73AF024F2BBE900225959 /* likeViewController.swift */,
+				FDE73AF024F2BBE900225959 /* LikeViewController.swift */,
 			);
-			path = BountyList;
-			sourceTree = "<group>";
-		};
-		FDE73AF924F2BBF500225959 /* MemoWithCollectionView */ = {
-			isa = PBXGroup;
-			children = (
-				FDE73AFA24F2BBF500225959 /* ContentViewController.swift */,
-				FDE73AFB24F2BBF500225959 /* ViewController.swift */,
-				FDE73AFD24F2BBF500225959 /* CollectionViewCell.swift */,
-				FDE73AFE24F2BBF500225959 /* EditViewController.swift */,
-				FDE73B0024F2BBF500225959 /* Photomemo+CoreDataProperties.swift */,
-				FDE73B0124F2BBF500225959 /* Photomemo+CoreDataClass.swift */,
-			);
-			path = MemoWithCollectionView;
+			path = NoLogin;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -367,27 +353,25 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				FDE73B0624F2BBF500225959 /* EditViewController.swift in Sources */,
+				FDE73B0624F2BBF500225959 /* PhotomMemoEditViewController.swift in Sources */,
 				FDE73ADB24F27DDD00225959 /* LoginViewController.swift in Sources */,
 				FD51EFD624E42DFC00EBB739 /* AppDelegate.swift in Sources */,
-				FDE73B0224F2BBF500225959 /* ContentViewController.swift in Sources */,
-				FDE73AF424F2BBE900225959 /* writeViewController.swift in Sources */,
+				FDE73B0224F2BBF500225959 /* PhotoMemoContentViewController.swift in Sources */,
+				FDE73AF424F2BBE900225959 /* WriteViewController.swift in Sources */,
 				FD51EFD824E42DFC00EBB739 /* SceneDelegate.swift in Sources */,
-				FDE73AF324F2BBE900225959 /* AddViewController.swift in Sources */,
-				FDE73B0824F2BBF500225959 /* Photomemo+CoreDataProperties.swift in Sources */,
+				FDE73AF324F2BBE900225959 /* PhotoMemoAddViewController.swift in Sources */,
 				FDE73AE524F2800A00225959 /* ChatUserModel.swift in Sources */,
 				FDE73ADA24F27DDD00225959 /* CompleteSignUpViewController.swift in Sources */,
-				FDE73AF824F2BBE900225959 /* likeViewController.swift in Sources */,
+				FDE73AF824F2BBE900225959 /* LikeViewController.swift in Sources */,
 				FDE73ADD24F27DDD00225959 /* SignUpViewController.swift in Sources */,
-				FDE73B0524F2BBF500225959 /* CollectionViewCell.swift in Sources */,
-				FDE73AF524F2BBE900225959 /* favoriteViewController.swift in Sources */,
-				FDE73AE224F27F4800225959 /* ChatMessageCell.swift in Sources */,
-				FDE73B0324F2BBF500225959 /* ViewController.swift in Sources */,
+				FDE73B0524F2BBF500225959 /* PhotoCollectionViewCell.swift in Sources */,
+				FDE73AE224F27F4800225959 /* ChatMessageViewCell.swift in Sources */,
+				FDE73B0324F2BBF500225959 /* PhotoViewController.swift in Sources */,
 				FDE73AF724F2BBE900225959 /* BountyViewController.swift in Sources */,
 				FDE73ADF24F27DEB00225959 /* LoginMyPageViewController.swift in Sources */,
 				FDE73ADC24F27DDD00225959 /* MyPageViewController.swift in Sources */,
 				FDE73AD924F27DDD00225959 /* TermsConditionViewController.swift in Sources */,
-				FDE73B0924F2BBF500225959 /* Photomemo+CoreDataClass.swift in Sources */,
+				FDE73B0924F2BBF500225959 /* PhotoMemoCoreData.swift in Sources */,
 				FDE73AF624F2BBE900225959 /* DetailViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
