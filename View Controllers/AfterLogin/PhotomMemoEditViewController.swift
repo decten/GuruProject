@@ -99,7 +99,7 @@ class PhotomMemoEditViewController: UIViewController, UIImagePickerControllerDel
 
         appDelegate.saveContext()
         
-        let  vc =  self.navigationController?.viewControllers.filter({$0 is PhotoViewController}).first
+        let  vc =  self.navigationController?.viewControllers.filter({$0 is PhotoMemoProileViewController}).first
         self.navigationController?.popToViewController(vc!, animated: true)
         
     }

@@ -41,7 +41,7 @@ class ChatDetailViewController: UIViewController, UITextFieldDelegate, UICollect
     }
     
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ChatMessageCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! ChatMessageViewCell
         let message = messages[indexPath.item]
         cell.textLabel.text = message.text
         setupChatCell(cell: cell, message:message)
@@ -51,7 +51,7 @@ class ChatDetailViewController: UIViewController, UITextFieldDelegate, UICollect
         return cell
     }
     
-    func setupChatCell(cell: ChatMessageCell, message:ChatMessage){
+    func setupChatCell(cell: ChatMessageViewCell, message:ChatMessage){
         let gUID = Auth.auth().currentUser?.uid ?? "message.fromUserID"
         if message.fromUserID == gUID{
             cell.containerView.backgroundColor = UIColor.blue //내가 보낸 메시지 창 색깔

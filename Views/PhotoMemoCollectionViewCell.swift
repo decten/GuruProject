@@ -8,7 +8,7 @@ import UIKit
 import CoreData
 
 
-class PhotoCollectionViewCell: UICollectionViewCell {
+class PhotoMemoCollectionViewCell: UICollectionViewCell {
     
     @IBOutlet var imageView: UIImageView!
     @IBOutlet var lblname: UILabel!

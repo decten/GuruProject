@@ -12,7 +12,20 @@ import FirebaseAuth
 
 class LoginMyPageViewController: UIViewController {
 
-
+    @IBAction func goPhoto(_ sender: Any) {
+        self.pushView(controller: "PhotoMemoProileViewController")
+    }
+    @IBAction func goHome(_ sender: Any) {
+        self.pushView(controller: "LoginHomeViewController")
+    }
+    
+    @IBAction func goLike(_ sender: Any) {
+        self.pushView(controller: "LoginLikeViecontroller")
+    }
+    
+    @IBAction func goWrite(_ sender: Any) {
+        self.pushView(controller: "WriteViewController")
+    }
     @IBOutlet weak var nickName: UILabel!
 
     @IBAction func goChat(_ sender: Any) {

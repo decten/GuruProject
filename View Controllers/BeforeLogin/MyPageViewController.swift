@@ -18,7 +18,6 @@ class MyPageViewController: UIViewController {
         item.descriptionText = "로그인이 필요한 기능입니다"
         
         item.actionHandler = { _ in
-            self.dismiss(animated: true, completion: nil)
             self.pushView(controller: "LoginViewController")
         }
         
@@ -28,13 +27,17 @@ class MyPageViewController: UIViewController {
         
     }()
     
+    @IBAction func goHome(_ sender: Any) {
+        self.pushView(controller: "HomeViewController")
+    }
+    
+    @IBAction func goLike(_ sender: Any) {
+        self.pushView(controller: "LikeViewController")
+    }
     @IBAction func goWrite(_ sender: Any) {
         boardManager.showBulletin(above: self)
     }
     
-    @IBAction func goMypage(_ sender: Any) {
-         boardManager.showBulletin(above: self)
-    }
     
     @IBAction func goChat(_ sender: Any) {
             boardManager.showBulletin(above: self)

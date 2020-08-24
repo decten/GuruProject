@@ -18,7 +18,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
         item.descriptionText = "로그인이 필요한 기능입니다"
         
         item.actionHandler = { _ in
-            self.dismiss(animated: true, completion: nil)
+            self.dismiss(animated: false, completion: nil)
             self.pushView(controller: "LoginViewController")
         }
         
@@ -53,7 +53,7 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     
     //테이블뷰 재활용하기
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? ListCell else {
+        guard let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath) as? HomeListCell else {
             return UITableViewCell()
         }
         
@@ -81,6 +81,9 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
     @IBAction func goChat(_ sender: Any) {
         boardManager.showBulletin(above: self)
     }
+    @IBAction func goMypage(_ sender: Any) {
+        self.pushView(controller: "MyPageViewController")
+    }
     
     // UITableViewDelegate (showDetail은 홈화면과 상세페이지 모달연결한 화살표의 identifier 이름이다.)
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
@@ -90,8 +93,12 @@ class HomeViewController: UIViewController, UITableViewDataSource, UITableViewDe
 }
 
 //커스텀셀(내맘대로디자인)하기
-class ListCell: UITableViewCell {
+ class HomeListCell: UITableViewCell {
+    
+
     @IBOutlet weak var imgView: UIImageView!
     @IBOutlet weak var nameLabel: UILabel!
     @IBOutlet weak var bountyLabel: UILabel!
+    
+    
 }

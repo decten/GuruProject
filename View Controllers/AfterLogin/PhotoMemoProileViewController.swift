@@ -8,9 +8,18 @@ import UIKit
 import CoreData
 
 
-class PhotoViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, NSFetchedResultsControllerDelegate {
+class PhotoMemoProileViewController: UIViewController, UICollectionViewDelegate, UICollectionViewDataSource, NSFetchedResultsControllerDelegate {
     
     @IBOutlet weak var addBarButtonItem:UIBarButtonItem!
+    @IBAction func goAdd(_ sender: Any) {
+        self.pushView(controller: "PhotoMemoAddViewController")
+    }
+    
+    @IBAction func goEdit(_ sender: Any) {
+        self.pushView(controller: "PhotoMemoContentViewController")
+    }
+    
+    
     @IBOutlet var collectionView: UICollectionView!
     var controller : NSFetchedResultsController<Photomemo>!
     var managedObjectContext: NSManagedObjectContext!
@@ -87,7 +96,7 @@ class PhotoViewController: UIViewController, UICollectionViewDelegate, UICollect
     
 
     func collectionView(_ collectionView: UICollectionView, cellForItemAt indexPath: IndexPath) -> UICollectionViewCell {
-        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PhotoCollectionViewCell
+        let cell = collectionView.dequeueReusableCell(withReuseIdentifier: "Cell", for: indexPath) as! PhotoMemoCollectionViewCell
         cell.layer.borderColor = UIColor.lightGray.cgColor
         cell.layer.borderWidth = 0.5
         cell.lblname.layer.borderWidth = 0.5
@@ -107,11 +116,19 @@ class PhotoViewController: UIViewController, UICollectionViewDelegate, UICollect
         return cell
     }
     
+    func pushView(controller: String){
+        let vc = self.storyboard?.instantiateViewController(withIdentifier: controller)
+        vc!.modalPresentationStyle = .fullScreen
+        self.present(vc!, animated: true, completion: nil)
+    }
+
+    
+    
      override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
         
         if segue.identifier == "ContentViewController" {
         let contentViewController: PhotoMemoContentViewController = segue.destination as! PhotoMemoContentViewController
-        if let cell = sender as? PhotoCollectionViewCell, let indexPath = self.collectionView.indexPath(for: cell){
+        if let cell = sender as? PhotoMemoCollectionViewCell, let indexPath = self.collectionView.indexPath(for: cell){
             
             let photomemo = controller.object(at: indexPath)
 
@@ -121,14 +138,13 @@ class PhotoViewController: UIViewController, UICollectionViewDelegate, UICollect
         }
     }
     
-    // MARK - Delete Item
     override func setEditing(_ editing: Bool, animated: Bool) {
         super.setEditing(editing, animated: animated)
         
         addBarButtonItem.isEnabled = !editing
         if let indexPaths = collectionView?.indexPathsForVisibleItems {
             for indexPath in indexPaths {
-                if let cell = collectionView?.cellForItem(at: indexPath) as? PhotoCollectionViewCell {
+                if let cell = collectionView?.cellForItem(at: indexPath) as? PhotoMemoCollectionViewCell {
                     cell.isEditing = editing
                 }
             }

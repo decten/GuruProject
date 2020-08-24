@@ -17,7 +17,7 @@ class PhotoMemoContentViewController: UIViewController {
     @IBOutlet var memoContentsTextView: UITextView!
 
     var photomemo : Photomemo!
-    var viewcontroller = PhotoViewController()
+    var viewcontroller = PhotoMemoProileViewController()
     
     
     override func viewDidLoad() {

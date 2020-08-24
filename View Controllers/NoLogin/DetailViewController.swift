@@ -38,7 +38,7 @@ class DetailViewController: UIViewController {
     }
 
     @IBAction func goChat(_ sender: Any) {
-        self.pushView(controller: "ChatViewController")
+        self.pushView(controller: "LoginViewController")
     }
     
     //x버튼 누르면 모달 화면 닫힘 구현

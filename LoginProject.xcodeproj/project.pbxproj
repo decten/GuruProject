@@ -10,11 +10,18 @@
 		91F752F024E839A700EC507B /* KakaoOpenSDK.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 91F752EF24E839A700EC507B /* KakaoOpenSDK.framework */; };
 		9DF9E295ED7EAF859B2556D3 /* Pods_LoginProject.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 6CF96BE647A3E3E88513463C /* Pods_LoginProject.framework */; };
 		FD05013124F2EE1400A1775A /* HomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD05013024F2EE1400A1775A /* HomeViewController.swift */; };
+		FD1906A924F3C89B002AD0B0 /* ChatDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1906A624F3C89A002AD0B0 /* ChatDetailViewController.swift */; };
+		FD1906AA24F3C89B002AD0B0 /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1906A724F3C89B002AD0B0 /* ChatViewController.swift */; };
+		FD1906AB24F3C89B002AD0B0 /* UserListViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD1906A824F3C89B002AD0B0 /* UserListViewController.swift */; };
 		FD51EFD624E42DFC00EBB739 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51EFD524E42DFC00EBB739 /* AppDelegate.swift */; };
 		FD51EFD824E42DFC00EBB739 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD51EFD724E42DFC00EBB739 /* SceneDelegate.swift */; };
 		FD51EFDF24E42E0200EBB739 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = FD51EFDE24E42E0200EBB739 /* Assets.xcassets */; };
 		FD51EFE224E42E0200EBB739 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FD51EFE024E42E0200EBB739 /* LaunchScreen.storyboard */; };
 		FD51F00224E45A8400EBB739 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = FD51F00124E45A8400EBB739 /* GoogleService-Info.plist */; };
+		FD7676C524F3B0C700965B7F /* LoginHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7676C424F3B0C700965B7F /* LoginHomeViewController.swift */; };
+		FD7676C724F3B0E900965B7F /* LoginLikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7676C624F3B0E900965B7F /* LoginLikeViewController.swift */; };
+		FD7676CA24F3BBCE00965B7F /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */ = {isa = PBXBuildFile; fileRef = FD7676C924F3BBCE00965B7F /* CGImagePropertyOrientation+UIImageOrientation.swift */; };
+		FD7676CC24F3BC2C00965B7F /* DogCatClassifier.mlmodel in Sources */ = {isa = PBXBuildFile; fileRef = FD7676CB24F3BC2C00965B7F /* DogCatClassifier.mlmodel */; };
 		FDE73AD924F27DDD00225959 /* TermsConditionViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AD424F27DDC00225959 /* TermsConditionViewController.swift */; };
 		FDE73ADA24F27DDD00225959 /* CompleteSignUpViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AD524F27DDC00225959 /* CompleteSignUpViewController.swift */; };
 		FDE73ADB24F27DDD00225959 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AD624F27DDC00225959 /* LoginViewController.swift */; };
@@ -28,8 +35,8 @@
 		FDE73AF624F2BBE900225959 /* DetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AEE24F2BBE900225959 /* DetailViewController.swift */; };
 		FDE73AF824F2BBE900225959 /* LikeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AF024F2BBE900225959 /* LikeViewController.swift */; };
 		FDE73B0224F2BBF500225959 /* PhotoMemoContentViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFA24F2BBF500225959 /* PhotoMemoContentViewController.swift */; };
-		FDE73B0324F2BBF500225959 /* PhotoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFB24F2BBF500225959 /* PhotoViewController.swift */; };
-		FDE73B0524F2BBF500225959 /* PhotoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFD24F2BBF500225959 /* PhotoCollectionViewCell.swift */; };
+		FDE73B0324F2BBF500225959 /* PhotoMemoProileViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFB24F2BBF500225959 /* PhotoMemoProileViewController.swift */; };
+		FDE73B0524F2BBF500225959 /* PhotoMemoCollectionViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFD24F2BBF500225959 /* PhotoMemoCollectionViewCell.swift */; };
 		FDE73B0624F2BBF500225959 /* PhotomMemoEditViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73AFE24F2BBF500225959 /* PhotomMemoEditViewController.swift */; };
 		FDE73B0924F2BBF500225959 /* PhotoMemoCoreData.swift in Sources */ = {isa = PBXBuildFile; fileRef = FDE73B0124F2BBF500225959 /* PhotoMemoCoreData.swift */; };
 		FDE73B0D24F2BEE000225959 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FDE73B0C24F2BEDF00225959 /* Main.storyboard */; };
@@ -41,6 +48,9 @@
 		81A5F735EADB8F06DAAFED50 /* Pods-LoginProject.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-LoginProject.debug.xcconfig"; path = "Target Support Files/Pods-LoginProject/Pods-LoginProject.debug.xcconfig"; sourceTree = "<group>"; };
 		91F752EF24E839A700EC507B /* KakaoOpenSDK.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; path = KakaoOpenSDK.framework; sourceTree = "<group>"; };
 		FD05013024F2EE1400A1775A /* HomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = HomeViewController.swift; sourceTree = "<group>"; };
+		FD1906A624F3C89A002AD0B0 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatDetailViewController.swift; sourceTree = "<group>"; };
+		FD1906A724F3C89B002AD0B0 /* ChatViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		FD1906A824F3C89B002AD0B0 /* UserListViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserListViewController.swift; sourceTree = "<group>"; };
 		FD51EFD224E42DFC00EBB739 /* 맡아줄개.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "맡아줄개.app"; sourceTree = BUILT_PRODUCTS_DIR; };
 		FD51EFD524E42DFC00EBB739 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		FD51EFD724E42DFC00EBB739 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -48,9 +58,10 @@
 		FD51EFE124E42E0200EBB739 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		FD51EFE324E42E0200EBB739 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		FD51F00124E45A8400EBB739 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
-		FDE73AD124F27CC900225959 /* UserListViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = UserListViewController.swift; path = "../../../로그인_수정 2/로그인_수정/View Controllers/Chat/UserListViewController.swift"; sourceTree = "<group>"; };
-		FDE73AD224F27CC900225959 /* ChatDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatDetailViewController.swift; path = "../../../로그인_수정 2/로그인_수정/View Controllers/Chat/ChatDetailViewController.swift"; sourceTree = "<group>"; };
-		FDE73AD324F27CC900225959 /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; name = ChatViewController.swift; path = "../../../로그인_수정 2/로그인_수정/View Controllers/Chat/ChatViewController.swift"; sourceTree = "<group>"; };
+		FD7676C424F3B0C700965B7F /* LoginHomeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginHomeViewController.swift; sourceTree = "<group>"; };
+		FD7676C624F3B0E900965B7F /* LoginLikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginLikeViewController.swift; sourceTree = "<group>"; };
+		FD7676C924F3BBCE00965B7F /* CGImagePropertyOrientation+UIImageOrientation.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGImagePropertyOrientation+UIImageOrientation.swift"; sourceTree = "<group>"; };
+		FD7676CB24F3BC2C00965B7F /* DogCatClassifier.mlmodel */ = {isa = PBXFileReference; lastKnownFileType = file.mlmodel; path = DogCatClassifier.mlmodel; sourceTree = "<group>"; };
 		FDE73AD424F27DDC00225959 /* TermsConditionViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TermsConditionViewController.swift; sourceTree = "<group>"; };
 		FDE73AD524F27DDC00225959 /* CompleteSignUpViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompleteSignUpViewController.swift; sourceTree = "<group>"; };
 		FDE73AD624F27DDC00225959 /* LoginViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
@@ -64,8 +75,8 @@
 		FDE73AEE24F2BBE900225959 /* DetailViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DetailViewController.swift; sourceTree = "<group>"; };
 		FDE73AF024F2BBE900225959 /* LikeViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LikeViewController.swift; sourceTree = "<group>"; };
 		FDE73AFA24F2BBF500225959 /* PhotoMemoContentViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMemoContentViewController.swift; sourceTree = "<group>"; };
-		FDE73AFB24F2BBF500225959 /* PhotoViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoViewController.swift; sourceTree = "<group>"; };
-		FDE73AFD24F2BBF500225959 /* PhotoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoCollectionViewCell.swift; sourceTree = "<group>"; };
+		FDE73AFB24F2BBF500225959 /* PhotoMemoProileViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMemoProileViewController.swift; sourceTree = "<group>"; };
+		FDE73AFD24F2BBF500225959 /* PhotoMemoCollectionViewCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMemoCollectionViewCell.swift; sourceTree = "<group>"; };
 		FDE73AFE24F2BBF500225959 /* PhotomMemoEditViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotomMemoEditViewController.swift; sourceTree = "<group>"; };
 		FDE73B0124F2BBF500225959 /* PhotoMemoCoreData.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = PhotoMemoCoreData.swift; sourceTree = "<group>"; };
 		FDE73B0C24F2BEDF00225959 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; path = Main.storyboard; sourceTree = "<group>"; };
@@ -139,7 +150,7 @@
 			children = (
 				FDE73AE024F27E9500225959 /* Storyboards */,
 				FD51EFDE24E42E0200EBB739 /* Assets.xcassets */,
-				FDE73AFD24F2BBF500225959 /* PhotoCollectionViewCell.swift */,
+				FDE73AFD24F2BBF500225959 /* PhotoMemoCollectionViewCell.swift */,
 				FDE73AE124F27F4800225959 /* ChatMessageViewCell.swift */,
 			);
 			path = Views;
@@ -155,15 +166,27 @@
 			path = "View Controllers";
 			sourceTree = "<group>";
 		};
+		FD7676C824F3BBA000965B7F /* MachineLearning */ = {
+			isa = PBXGroup;
+			children = (
+				FD7676CB24F3BC2C00965B7F /* DogCatClassifier.mlmodel */,
+				FD7676C924F3BBCE00965B7F /* CGImagePropertyOrientation+UIImageOrientation.swift */,
+			);
+			path = MachineLearning;
+			sourceTree = "<group>";
+		};
 		FDE73ACD24F27B0300225959 /* AfterLogin */ = {
 			isa = PBXGroup;
 			children = (
+				FD7676C424F3B0C700965B7F /* LoginHomeViewController.swift */,
+				FD7676C624F3B0E900965B7F /* LoginLikeViewController.swift */,
 				FDE73AEB24F2BBE900225959 /* PhotoMemoAddViewController.swift */,
 				FDE73AFA24F2BBF500225959 /* PhotoMemoContentViewController.swift */,
 				FDE73AFE24F2BBF500225959 /* PhotomMemoEditViewController.swift */,
-				FDE73AFB24F2BBF500225959 /* PhotoViewController.swift */,
+				FDE73AFB24F2BBF500225959 /* PhotoMemoProileViewController.swift */,
 				FDE73AEC24F2BBE900225959 /* WriteViewController.swift */,
 				FDE73ADE24F27DEB00225959 /* LoginMyPageViewController.swift */,
+				FD7676C824F3BBA000965B7F /* MachineLearning */,
 				FDE73AD024F27B2F00225959 /* Chat */,
 			);
 			path = AfterLogin;
@@ -172,6 +195,8 @@
 		FDE73ACE24F27B1C00225959 /* BeforeLogin */ = {
 			isa = PBXGroup;
 			children = (
+				FD05013024F2EE1400A1775A /* HomeViewController.swift */,
+				FDE73AF024F2BBE900225959 /* LikeViewController.swift */,
 				FDE73AD524F27DDC00225959 /* CompleteSignUpViewController.swift */,
 				FDE73AD624F27DDC00225959 /* LoginViewController.swift */,
 				FDE73AD724F27DDC00225959 /* MyPageViewController.swift */,
@@ -184,9 +209,9 @@
 		FDE73AD024F27B2F00225959 /* Chat */ = {
 			isa = PBXGroup;
 			children = (
-				FDE73AD224F27CC900225959 /* ChatDetailViewController.swift */,
-				FDE73AD324F27CC900225959 /* ChatViewController.swift */,
-				FDE73AD124F27CC900225959 /* UserListViewController.swift */,
+				FD1906A624F3C89A002AD0B0 /* ChatDetailViewController.swift */,
+				FD1906A724F3C89B002AD0B0 /* ChatViewController.swift */,
+				FD1906A824F3C89B002AD0B0 /* UserListViewController.swift */,
 			);
 			path = Chat;
 			sourceTree = "<group>";
@@ -213,8 +238,6 @@
 			isa = PBXGroup;
 			children = (
 				FDE73AEE24F2BBE900225959 /* DetailViewController.swift */,
-				FD05013024F2EE1400A1775A /* HomeViewController.swift */,
-				FDE73AF024F2BBE900225959 /* LikeViewController.swift */,
 			);
 			path = NoLogin;
 			sourceTree = "<group>";
@@ -360,19 +383,26 @@
 				FDE73AF424F2BBE900225959 /* WriteViewController.swift in Sources */,
 				FD51EFD824E42DFC00EBB739 /* SceneDelegate.swift in Sources */,
 				FDE73AF324F2BBE900225959 /* PhotoMemoAddViewController.swift in Sources */,
+				FD7676C724F3B0E900965B7F /* LoginLikeViewController.swift in Sources */,
 				FDE73AE524F2800A00225959 /* ChatUserModel.swift in Sources */,
 				FDE73ADA24F27DDD00225959 /* CompleteSignUpViewController.swift in Sources */,
 				FDE73AF824F2BBE900225959 /* LikeViewController.swift in Sources */,
+				FD7676CA24F3BBCE00965B7F /* CGImagePropertyOrientation+UIImageOrientation.swift in Sources */,
 				FDE73ADD24F27DDD00225959 /* SignUpViewController.swift in Sources */,
-				FDE73B0524F2BBF500225959 /* PhotoCollectionViewCell.swift in Sources */,
+				FDE73B0524F2BBF500225959 /* PhotoMemoCollectionViewCell.swift in Sources */,
+				FD7676C524F3B0C700965B7F /* LoginHomeViewController.swift in Sources */,
 				FDE73AE224F27F4800225959 /* ChatMessageViewCell.swift in Sources */,
-				FDE73B0324F2BBF500225959 /* PhotoViewController.swift in Sources */,
+				FDE73B0324F2BBF500225959 /* PhotoMemoProileViewController.swift in Sources */,
 				FDE73ADF24F27DEB00225959 /* LoginMyPageViewController.swift in Sources */,
 				FD05013124F2EE1400A1775A /* HomeViewController.swift in Sources */,
 				FDE73ADC24F27DDD00225959 /* MyPageViewController.swift in Sources */,
 				FDE73AD924F27DDD00225959 /* TermsConditionViewController.swift in Sources */,
+				FD1906A924F3C89B002AD0B0 /* ChatDetailViewController.swift in Sources */,
+				FD1906AA24F3C89B002AD0B0 /* ChatViewController.swift in Sources */,
+				FD1906AB24F3C89B002AD0B0 /* UserListViewController.swift in Sources */,
 				FDE73B0924F2BBF500225959 /* PhotoMemoCoreData.swift in Sources */,
 				FDE73AF624F2BBE900225959 /* DetailViewController.swift in Sources */,
+				FD7676CC24F3BC2C00965B7F /* DogCatClassifier.mlmodel in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
